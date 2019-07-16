@@ -1,0 +1,54 @@
+parameters:
+  - name: application.bucket.endpoint
+    value: 'https://kf-amcs3-minio.app.kf-amcs3.sol01.superhub.io'
+  - name: application.bucket.endpoint.internal
+    value: 'http://kf-amcs3-minio.minio.svc.cluster.local:9000'
+  - name: application.bucket.name
+    value: default
+  - name: application.bucket.region
+    value: us-east-1
+  - name: application.description
+    value: Kubflow pipeline
+  - name: application.jupyter.kernel.docker.auth.basic.username
+    value: admin
+  - name: application.jupyter.kernel.docker.auth.host
+    value: kf-amcs3-harbor.svc.kf-amcs3.sol01.superhub.io
+  - name: application.jupyter.kernel.docker.registry.image
+    value: >-
+      kf-amcs3-harbor.svc.kf-amcs3.sol01.superhub.io/library/sample-kubernetes-app-001
+  - name: application.jupyter.kernel.docker.registry.kind
+    value: harbor
+  - name: application.jupyter.kernel.docker.registry.url
+    value: kf-amcs3-harbor.svc.kf-amcs3.sol01.superhub.io/library
+  - name: application.kubeflow.customKernel
+    value: 'false'
+  - name: application.name
+    value: sample-kubernetes-app-001
+  - name: component.dex.okta.appId
+    value: 0oa4hang0pJzV08g12p7
+  - name: component.dex.okta.clientId
+    value: 0oa4hang0pJzV08g12p7
+  - name: component.dex.okta.issuer
+    value: 'https://agilestacks.okta.com'
+  - name: component.github.repository.name
+    value: sample-kubernetes-app-001
+  - name: component.github.repository.organization
+    value: ima-tester
+outputs:
+  - name: application.bucket.endpoint
+  - name: application.bucket.endpoint.internal
+  - name: application.bucket.name
+  - name: application.bucket.region
+  - name: application.description
+  - name: application.jupyter.kernel.docker.auth.basic.username
+  - name: application.jupyter.kernel.docker.auth.host
+  - name: application.jupyter.kernel.docker.registry.image
+  - name: application.jupyter.kernel.docker.registry.kind
+  - name: application.jupyter.kernel.docker.registry.url
+  - name: application.kubeflow.customKernel
+  - name: application.name
+  - name: component.dex.okta.appId
+  - name: component.dex.okta.clientId
+  - name: component.dex.okta.issuer
+  - name: component.github.repository.name
+  - name: component.github.repository.organization
